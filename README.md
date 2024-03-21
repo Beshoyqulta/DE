@@ -1,38 +1,37 @@
 # Inventory_db
 a database that tracks inventory and stock 
+
+
 in this database you will find these tables 
-+-----------------------------------------------+
-|                 INVENTORY                     |
-+-----------------------------------------------+
-| InventoryID (PK)      |  int                |
-| ProductID (FK)        |  int                |
-| LocationID (FK)       |  int                |
-| Quantity              |  int                |
-| LastUpdated           |  datetime           |
-+-----------------------------------------------+
 
-+-----------------------------------------------+
-|                 PRODUCT                       |
-+-----------------------------------------------+
-| ProductID (PK)        |  int                |
-| Name                  |  varchar            |
-| Description           |  varchar            |
-| Price                 |  decimal            |
-| CategoryID (FK)       |  int                |
-+-----------------------------------------------+
+#### Inventory Table
+| Column Name    | Data Type | Description         |
+|----------------|-----------|---------------------|
+| InventoryID    | int       | Primary Key         |
+| ProductID      | int       | Foreign Key (Product)|
+| LocationID     | int       | Foreign Key (Location)|
+| Quantity       | int       | Quantity of product |
+| LastUpdated    | datetime  | Last update timestamp|
 
-+-----------------------------------------------+
-|                 CATEGORY                      |
-+-----------------------------------------------+
-| CategoryID (PK)       |  int                |
-| Name                  |  varchar            |
-| Description           |  varchar            |
-+-----------------------------------------------+
+#### Product Table
+| Column Name    | Data Type | Description         |
+|----------------|-----------|---------------------|
+| ProductID      | int       | Primary Key         |
+| Name           | varchar   | Product name        |
+| Description    | varchar   | Product description |
+| Price          | decimal   | Product price       |
+| CategoryID     | int       | Foreign Key (Category)|
 
-+-----------------------------------------------+
-|                 LOCATION                      |
-+-----------------------------------------------+
-| LocationID (PK)       |  int                |
-| Name                  |  varchar            |
-| Description           |  varchar            |
-+-----------------------------------------------+
+#### Category Table
+| Column Name    | Data Type | Description         |
+|----------------|-----------|---------------------|
+| CategoryID     | int       | Primary Key         |
+| Name           | varchar   | Category name       |
+| Description    | varchar   | Category description|
+
+#### Location Table
+| Column Name    | Data Type | Description         |
+|----------------|-----------|---------------------|
+| LocationID     | int       | Primary Key         |
+| Name           | varchar   | Location name       |
+| Description    | varchar   | Location description|

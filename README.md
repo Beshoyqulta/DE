@@ -35,3 +35,15 @@ in this database you will find these tables
 | LocationID     | int       | Primary Key         |
 | Name           | varchar   | Location name       |
 | Description    | varchar   | Location description|
+
+
+
+
+
+
+Here is the ERD 
+
+
+
+![Screenshot 2024-03-21 073753](https://github.com/Beshoyqulta/inventory_db/assets/100474873/1a16a422-d1aa-40db-8f62-7bfcb0efbb66)
+
